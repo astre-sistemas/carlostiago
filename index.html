@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Prof. Carlos Tiago · Gestão pública, licitações e governança</title>
-<meta name="description" content="Prof. Carlos Tiago Jorge de Azevedo: professor, consultor e autor em gestão pública, licitações e contratos (Lei 14.133/21) e governança. Presidente do Instituto Minas Gerais de Pesquisa, Ensino e Inovação.">
+<meta name="description" content="Prof. Carlos Tiago: professor, consultor e autor em gestão pública, licitações e contratos (Lei 14.133/21) e governança. Presidente do Instituto Minas Gerais de Pesquisa, Ensino e Inovação.">
 <meta name="theme-color" content="#141a2e">
 <meta property="og:title" content="Prof. Carlos Tiago">
 <meta property="og:description" content="Gestão pública, licitações e contratos e governança.">
@@ -109,6 +109,7 @@ input,select{padding:12px 0;min-height:46px}
 .hero h1{font-size:clamp(52px,min(13vw,calc((100vh - var(--pt) - var(--pb) - var(--fixed)) / 2.3)),240px);font-size:clamp(52px,min(13vw,calc((100svh - var(--pt) - var(--pb) - var(--fixed)) / 2.3)),240px);line-height:.84;font-weight:500;letter-spacing:-.035em;max-width:11ch}
 .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
 .hero h1 .ln2{font-style:italic;font-weight:400;font-size:.42em;letter-spacing:-.01em;color:#e9dccb;padding-left:.12em;margin-top:.1em}
+.hero h1 .ln2:first-child{margin:0 0 .04em}
 .hero h1 .ch{display:inline-block;will-change:transform}
 .hero-foot{display:grid;grid-template-columns:minmax(0,600px) auto;gap:40px;align-items:end;justify-content:space-between;margin-top:auto;padding-top:clamp(16px,3vh,40px)}
 .hero .lede{font-size:clamp(15px,min(1.3vw,2.1vh),19px);line-height:1.6;color:rgba(246,242,235,.82);margin:0 0 clamp(16px,2.6vh,26px);max-width:36em}
@@ -270,7 +271,6 @@ section{position:relative}
 .vcard{position:relative;overflow:hidden;background:var(--ink-2);color:var(--paper);display:block;text-align:left;width:100%;isolation:isolate}
 .vcard img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter .6s;filter:saturate(.9)}
 .vcard::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,17,31,.96) 0%,rgba(13,17,31,.78) 34%,rgba(13,17,31,.15) 70%,rgba(13,17,31,.1) 100%);z-index:1}
-.v-s1 img,.v-s2 img{object-position:50% 0%}
 .vcard:hover img{transform:scale(1.05);filter:saturate(1.05)}
 .vcard .meta{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:clamp(18px,2vw,30px)}
 .vcard .meta .sc{color:#e3a2ad;display:block;margin-bottom:10px}
@@ -280,15 +280,8 @@ section{position:relative}
 .vcard .play::before{content:"";border-left:13px solid var(--paper);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:4px}
 .vcard:hover .play{background:var(--wine);border-color:var(--wine);transform:scale(1.1)}
 .v-main{grid-column:1/9;aspect-ratio:16/10}
-.v-reel{grid-column:9/13;grid-row:span 2}
+.v-reel{grid-column:9/13}
 .v-reel img{position:absolute;inset:0}
-.v-s1{grid-column:1/5;aspect-ratio:16/10}
-.v-s2{grid-column:5/9;aspect-ratio:16/10}
-.v-s1,.v-s2{aspect-ratio:auto!important;display:flex;flex-direction:column}
-.v-s1 img,.v-s2 img{aspect-ratio:16/9;height:auto}
-.v-s1::after,.v-s2::after{display:none}
-.v-s1 .meta,.v-s2 .meta{position:relative;flex:1}
-.v-s1 .meta h3,.v-s2 .meta h3{font-size:clamp(20px,1.6vw,26px)}
 .v-note{grid-column:1/13;color:var(--muted);font-size:13px;margin-top:6px}
 .dur{position:absolute;z-index:2;left:clamp(18px,2vw,28px);top:clamp(22px,2.2vw,32px);font:500 11px/1 var(--sans);letter-spacing:.16em;background:rgba(13,17,31,.6);padding:7px 10px;border-radius:20px}
 
@@ -452,7 +445,7 @@ footer{background:var(--ink-3);color:var(--paper);padding:0 0 30px;overflow:hidd
   .perfil-grid,.cursos-grid,.contact-grid,.books{grid-template-columns:1fr}
   .numbers ul{grid-template-columns:1fr 1fr;row-gap:40px}
   .numbers li:nth-child(3){border-left:0;padding-left:0}
-  .v-main,.v-s1,.v-s2{grid-column:1/13}
+  .v-main{grid-column:1/13}
   .v-reel{grid-column:1/13;grid-row:auto;aspect-ratio:4/5}
   .v-main{aspect-ratio:auto!important;display:flex;flex-direction:column}
   .v-main img{aspect-ratio:16/9;height:auto}
@@ -558,7 +551,6 @@ footer{background:var(--ink-3);color:var(--paper);padding:0 0 30px;overflow:hidd
   .perfil-grid{grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:32px}
   .v-main{grid-column:1/8}
   .v-reel{grid-column:8/13;aspect-ratio:auto}
-  .v-s1{grid-column:1/7}.v-s2{grid-column:7/13}
   .vcard .meta h3{font-size:clamp(20px,2.8vw,26px)}
   .mosaic{grid-auto-rows:clamp(48px,7vw,70px)}
 }
@@ -621,7 +613,7 @@ footer{background:var(--ink-3);color:var(--paper);padding:0 0 30px;overflow:hidd
 
 <header class="top" id="top">
   <div class="wrap">
-    <a class="brand" href="#inicio" aria-label="Prof. Carlos Tiago, início"><b>Carlos Tiago</b><span>Professor · Consultor · Autor</span></a>
+    <a class="brand" href="#inicio" aria-label="Prof. Carlos Tiago, início"><b>Prof. Carlos Tiago</b><span>Professor · Consultor · Autor</span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Principal">
       <a href="#perfil">Perfil</a>
@@ -648,10 +640,10 @@ footer{background:var(--ink-3);color:var(--paper);padding:0 0 30px;overflow:hidd
   <div class="hero-in">
     <div class="wrap">
       <p class="kick sc h-fade">Gestão pública · Licitações e contratos · Governança</p>
-      <h1 aria-label="Carlos Tiago Jorge de Azevedo">
+      <h1 aria-label="Prof. Carlos Tiago">
+        <span class="ln ln2" aria-hidden="true">Prof.</span>
         <span class="ln ln1" aria-hidden="true">Carlos</span>
         <span class="ln ln1" aria-hidden="true">Tiago</span>
-        <span class="ln ln2" aria-hidden="true">Jorge de Azevedo</span>
       </h1>
       <div class="hero-foot">
         <div>
@@ -699,7 +691,7 @@ footer{background:var(--ink-3);color:var(--paper);padding:0 0 30px;overflow:hidd
       </figure>
       <div>
         <div class="perfil-text rv">
-          <p>Carlos Tiago Jorge de Azevedo é mestrando em Direito e bacharel em Ciências Sociais pela Universidade Federal de Viçosa, com ênfase em Ciência Política. Atua como consultor em administração pública, com experiência em auditorias, elaboração de peças orçamentárias, licitações e contratos.</p>
+          <p>O Prof. Carlos Tiago é mestrando em Direito e bacharel em Ciências Sociais pela Universidade Federal de Viçosa, com ênfase em Ciência Política. Atua como consultor em administração pública, com experiência em auditorias, elaboração de peças orçamentárias, licitações e contratos.</p>
           <p>Foi Secretário Municipal de Planejamento e Desenvolvimento Econômico, Chefe de Gabinete e Assessor Especial na Prefeitura de Ponte Nova (MG), e Chefe de Gabinete Parlamentar na Câmara Municipal de Belo Horizonte. Hoje preside o Instituto Minas Gerais de Pesquisa, Ensino e Inovação (IMG), onde coordena projetos de governança pública, planejamento estratégico e capacitação de gestores.</p>
           <p>É autor de livros técnicos sobre administração pública municipal e professor em cursos de especialização.</p>
         </div>
@@ -887,7 +879,7 @@ footer{background:var(--ink-3);color:var(--paper);padding:0 0 30px;overflow:hidd
   <div class="wrap">
     <div class="sec-head">
       <p class="idx sc">TV e YouTube</p>
-      <h2 class="rv">Entrevistas e séries <em>em versão completa.</em></h2>
+      <h2 class="rv">Entrevistas <em>em versão completa.</em></h2>
     </div>
     <div class="vids">
       <button class="vcard v-main rv" data-yt="PNB6WpvfZjY" aria-label="Assistir: Instituto Minas Gerais no Opinião Minas, Rede Minas">
@@ -900,17 +892,7 @@ footer{background:var(--ink-3);color:var(--paper);padding:0 0 30px;overflow:hidd
         <span class="dur num">0:45</span><span class="play" aria-hidden="true"></span>
         <span class="meta"><span class="sc">Instagram · dezembro de 2024</span><h3>Menção Honrosa no V Prêmio Rede Governança Brasil</h3><p>Reconhecido em Brasília ao lado de instituições como TCU, Banco Central, Caixa e Petrobras.</p></span>
       </button>
-      <button class="vcard v-s1 rv" data-yt="-q-COpb_kH8" aria-label="Assistir: Plano Diretor de Ouro Preto, episódio 1">
-        <img src="media/yt-plano-diretor-1.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
-        <span class="dur num">5:52</span><span class="play" aria-hidden="true"></span>
-        <span class="meta"><span class="sc">IMG · Série Plano Diretor de Ouro Preto</span><h3>O que é o Plano Diretor e por que ele importa</h3></span>
-      </button>
-      <button class="vcard v-s2 rv" data-yt="uU5lAMUc_0E" aria-label="Assistir: Plano Diretor de Ouro Preto, episódio 4">
-        <img src="media/yt-plano-diretor-4.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
-        <span class="dur num">8:19</span><span class="play" aria-hidden="true"></span>
-        <span class="meta"><span class="sc">IMG · Série Plano Diretor de Ouro Preto</span><h3>Base jurídica e segurança do Plano Diretor</h3></span>
-      </button>
-      <p class="v-note">Vídeos do canal do Instituto Minas Gerais no YouTube e do perfil <a href="https://www.instagram.com/prof.carlostiago/" target="_blank" rel="noopener" style="text-decoration:underline">@prof.carlostiago</a> no Instagram.</p>
+      <p class="v-note">Vídeos do canal do Instituto Minas G1erais no YouTube e do perfil <a href="https://www.instagram.com/prof.carlostiago/" target="_blank" rel="noopener" style="text-decoration:underline">@prof.carlostiago</a> no Instagram.</p>
     </div>
   </div>
 </section>
@@ -1026,7 +1008,7 @@ footer{background:var(--ink-3);color:var(--paper);padding:0 0 30px;overflow:hidd
           <li><a href="https://wa.me/5531982400232" target="_blank" rel="noopener"><span class="sc">WhatsApp</span><span class="v num">(31) 9 8240-0232</span><span aria-hidden="true">↗</span></a></li>
           <li><a href="mailto:carlostiagoazevedo@hotmail.com"><span class="sc">E-mail</span><span class="v">carlostiagoazevedo@hotmail.com</span><span aria-hidden="true">↗</span></a></li>
           <li><a href="https://www.instagram.com/prof.carlostiago/" target="_blank" rel="noopener"><span class="sc">Instagram</span><span class="v">@prof.carlostiago</span><span aria-hidden="true">↗</span></a></li>
-          <li><a href="https://www.linkedin.com/in/carlos-tiago-azevedo-2b2a23b4/" target="_blank" rel="noopener"><span class="sc">LinkedIn</span><span class="v">Carlos Tiago Azevedo</span><span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.linkedin.com/in/carlos-tiago-azevedo-2b2a23b4/" target="_blank" rel="noopener"><span class="sc">LinkedIn</span><span class="v">Prof. Carlos Tiago</span><span aria-hidden="true">↗</span></a></li>
         </ul>
       </div>
       <form id="form" class="rv" novalidate>
@@ -1049,13 +1031,13 @@ footer{background:var(--ink-3);color:var(--paper);padding:0 0 30px;overflow:hidd
 <footer>
   <div class="wrap">
     <div class="f-top">
-      <div><p style="font:500 28px/1.1 var(--serif);color:var(--paper);margin-bottom:12px">Carlos Tiago</p><p>Professor, consultor e autor em gestão pública, licitações e contratos e governança. Presidente do Instituto Minas Gerais de Pesquisa, Ensino e Inovação.</p></div>
+      <div><p style="font:500 28px/1.1 var(--serif);color:var(--paper);margin-bottom:12px">Prof. Carlos Tiago</p><p>Professor, consultor e autor em gestão pública, licitações e contratos e governança. Presidente do Instituto Minas Gerais de Pesquisa, Ensino e Inovação.</p></div>
       <div><h4>Navegação</h4><ul><li><a href="#perfil">Perfil</a></li><li><a href="#trajetoria">Trajetória</a></li><li><a href="#atuacao">Atuação</a></li><li><a href="#videos">Vídeos</a></li><li><a href="#publicacoes">Publicações</a></li></ul></div>
       <div><h4>Contato</h4><ul><li><a href="https://wa.me/5531982400232" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:carlostiagoazevedo@hotmail.com">E-mail</a></li><li><a href="https://www.instagram.com/prof.carlostiago/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.linkedin.com/in/carlos-tiago-azevedo-2b2a23b4/" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
       <div><h4>Instituto</h4><ul><li><a href="#instituto">IMG</a></li><li><a href="#publicacoes">IMG Editora</a></li><li><a href="https://www.youtube.com/channel/UCw-Jh_Np37qhRYLs1aGjgKA" target="_blank" rel="noopener">IMG no YouTube</a></li></ul></div>
     </div>
     <p class="f-word" aria-hidden="true">Carlos <em>Tiago</em></p>
-    <div class="f-base"><span>© <span id="yr" class="num">2026</span> Carlos Tiago Jorge de Azevedo</span><span>Vídeos: @prof.carlostiago e canal do IMG. <a href="#inicio" style="color:var(--paper)">Voltar ao topo ↑</a></span></div>
+    <div class="f-base"><span>© <span id="yr" class="num">2026</span> Prof. Carlos Tiago</span><span>Vídeos: @prof.carlostiago e canal do IMG. <a href="#inicio" style="color:var(--paper)">Voltar ao topo ↑</a></span></div>
   </div>
 </footer>
 

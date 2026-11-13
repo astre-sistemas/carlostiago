@@ -1,4 +1,4 @@
-# Site — Prof. Carlos Tiago Jorge de Azevedo
+# Site — Prof. Carlos Tiago
 
 Site institucional do Prof. Carlos Tiago (Instituto Minas Gerais de Pesquisa, Ensino e Inovação).
 
